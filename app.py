@@ -6,8 +6,8 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('deployment_28042020')
-cols = ['age', 'sex', 'bmi', 'children', 'smoker', 'region']
+model = load_model('dt_api')
+cols = ['Relación Na2SiO3/NaOH', 'Contenido de Na2SiO3 (mL)', 'Contenido de NaOH (mL)', 'Contenido de extra agua (mL)', 'Temperatura de Curado (ºC)', 'Total liquido/binder (zeolita)', 'Activador/zeolita', 'tiempo de curado (dias) total']
 
 @app.route('/')
 def home():
